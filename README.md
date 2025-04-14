@@ -1,1 +1,0 @@
-# space_navigators_app

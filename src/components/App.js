@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react';
 
-const App = () =>(
+import './App.css';
+
+const App = () => (
   <h1>HELLO WORLD</h1>
 );
 

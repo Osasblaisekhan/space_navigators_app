@@ -1,0 +1,16 @@
+.container {
+  margin: 20px 0 0 50px;
+}
+
+.reserved-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f1f1;
+  width: 400px;
+}
+
+.reserved-list li {
+  list-style: none;
+  border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+}

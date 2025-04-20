@@ -1,53 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.time {
+  text-align: end;
+  color: burlywood;
+  font-size: 2rem;
+  margin-right: 50px;
 }
-
-.nav {
-    display: flex;
-    gap: 30rem;
-    font-size: 20px;
-    padding: 2rem;
-    justify-content: space-between;
-  }
-  h1{
-    font-weight: lighter;
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 5rem;
-  }
-  
-  nav ul li {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 20px;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    list-style: none;
-  }
-
-  .nav ul li a:hover{
-    text-decoration: underline;
-  }
-
-  .nav ul li a:active {
-    text-decoration: underline;
-  }
-
-  .header p{
-    width: 1373px;
-    margin-left: 50px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-weight: lighter;
-  }
-  
-  

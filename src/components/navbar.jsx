@@ -1,25 +1,58 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import myImage from '../assets/Capture.PNG';
 
-const Navbar = () => (
-  <div className="header">
-    <div className="nav">
-      <h1>Space Travelers' Hub</h1>
-      <ul>
-        <li>
-          <Link to="/">Rockets</Link>
-        </li>
-        <li>
-          <Link to="/missions">Missions |</Link>
-        </li>
-        <li>
-          <Link to="/my profile">My profile</Link>
-        </li>
-      </ul>
+import './navbar.css';
+
+const Navbar = () => {
+  const [activeLink, setActiveLink] = useState('/');
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
+  return (
+    <div className="header">
+      <nav className="nav">
+        <div className="logo">
+          <img src={myImage} alt="loading..." />
+          <h1>Space Travelers Hub</h1>
+        </div>
+        <ul>
+          <li>
+            <Link
+              className={`link ${activeLink === '/' ? 'active' : ''}`}
+              to="/"
+              onClick={() => handleLinkClick('/')}
+            >
+              Rockets
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={`link ${activeLink === '/missions' ? 'active' : ''}`}
+              to="/missions"
+              onClick={() => handleLinkClick('/missions')}
+            >
+              Missions
+            </Link>
+          </li>
+          <li className="line">|</li>
+
+          <li>
+            <Link
+              className={`link ${activeLink === '/profile' ? 'active' : ''}`}
+              to="/profile"
+              onClick={() => handleLinkClick('/profile')}
+            >
+              My profile
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <p />
-  </div>
-);
+  );
+};
 
 export default Navbar;

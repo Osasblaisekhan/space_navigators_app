@@ -6,7 +6,10 @@ import './profile.css';
 
 const Myprofile = () => {
   // const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.rocket.rockets);
+  const missions = useSelector((state) => state.rocketMission.missions);
+  // console.log(missions);
+  const joinedMission = missions.filter((mission) => mission.joinedMission);
+  const rockets = useSelector((state) => state.rocketMission.rockets);
   // console.log('this are rocket', rockets);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
   // console.log('this are reserved rocket from profile', reservedRockets);
@@ -16,7 +19,19 @@ const Myprofile = () => {
   // };
 
   return (
-    <div className="container">
+    <div className="containers">
+
+      <div className="reservedmision">
+        <h1>My Mission</h1>
+        <div className="reserved-missions">
+          <ul>
+            {
+        joinedMission.map((reserved) => <li key={reserved.id}><h2>{reserved.name}</h2></li>)
+    }
+          </ul>
+        </div>
+      </div>
+
       <div className="reserved-rockets">
         <h2>My Rockets</h2>
         {/* {reservedRockets.length > 0 ? ( */}
@@ -36,6 +51,7 @@ const Myprofile = () => {
       )} */}
 
       </div>
+
     </div>
   );
 };

@@ -46,6 +46,7 @@ const slice = createSlice({
         if (rocket.id !== id) return rocket;
         return { ...rocket, reserved: true };
       });
+      localStorage.setItem('rockets', JSON.stringify(newRockets));
       return { ...state, rockets: newRockets }; // Return new state
     },
     cancelReservation: (state, action) => {
@@ -54,6 +55,7 @@ const slice = createSlice({
         if (rocket.id !== id) return rocket;
         return { ...rocket, reserved: false };
       });
+      localStorage.setItem('rockets', JSON.stringify(newRockets));
       return { ...state, rockets: newRockets }; // Return new state
     },
   },

@@ -7,7 +7,7 @@ import Slice from './slice';
 const logger = createLogger();
 const Store = configureStore({
   reducer: {
-    rocket: Slice,
+    rocketMission: Slice,
   },
   // Add logger middleware
   middleware: (getDefaultMiddleware) => getDefaultMiddleware()

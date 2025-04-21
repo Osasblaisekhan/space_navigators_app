@@ -1,5 +1,7 @@
-.container {
+.containers {
   margin: 20px 0 0 50px;
+  display: flex;
+  gap: 80px;
 }
 
 .reserved-list {
@@ -13,4 +15,29 @@
   list-style: none;
   border-bottom: 1px solid #f1f1f1;
   width: 100%;
+}
+
+.reservedmission{
+  margin: 5px;
+}
+
+.reserved-missions {
+  border: 1px solid #f1f1f1;
+  width: 400px;
+}
+
+.reserved-missions h1{
+  margin: 20px;
+}
+
+.reserved-missions ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+}
+
+.reserved-missions ul li {
+  border-bottom: 1px solid #f1f1f1;
 }

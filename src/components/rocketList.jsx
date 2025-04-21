@@ -13,11 +13,11 @@ const Rockets = () => {
     dispatch(fetchRockets());
   }, [dispatch]);
 
-  const rockets = useSelector((state) => state.rocket.rockets);
+  const rockets = useSelector((state) => state.rocketMission.rockets);
   // console.log(rockets);
-  const loading = useSelector((state) => state.rocket.loading);
+  const loading = useSelector((state) => state.rocketMission.loading);
   // console.log(loading);
-  const error = useSelector((state) => state.rocket.error);
+  const error = useSelector((state) => state.rocketMission.error);
   // console.log(error);
 
   const handleToggleReservation = (id, isReserved) => {

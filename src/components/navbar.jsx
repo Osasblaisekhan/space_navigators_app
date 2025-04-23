@@ -49,6 +49,26 @@ const Navbar = () => {
               My profile
             </Link>
           </li>
+
+          <li>
+            <Link
+              className={`link ${activeLink === '/calender' ? 'active' : ''}`}
+              to="/calender"
+              onClick={() => handleLinkClick('/calender')}
+            >
+              Calender
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={`link ${activeLink === '/count' ? 'active' : ''}`}
+              to="/count"
+              onClick={() => handleLinkClick('/count')}
+            >
+              Qrcode
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mission-content {
+  font-size: 20px;
+  display: flex;
+  border: 1px solid rgb(202, 201, 201);
+  width: 90rem;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-left: 20px; */
+  border-collapse: collapse;
+}
+
+.contents th {
+  border: 1px solid rgb(202, 201, 201);
+  width: 3500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content td {
+  border: 1px solid rgb(202, 201, 201);
+}
+
+.content-name {
+  text-align: center;
+}
+
+.content button {
+  text-align: center;
+}
+
+.description {
+  width: 100rem;
+}
+
+.button {
+  text-align: center;
+}
+
+.join-button {
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.leave-button {
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.active-member {
+  background-color: blueviolet;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.not-member {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.mymission ul {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(53, 52, 52);
+  width: 25rem;
+  margin: 10px;
+}
+
+.mymission ul li {
+  border: 1px solid rgb(61, 60, 60);
+  padding: 10px;
+}
+
+.new-btn {
+  display: none;
+}
